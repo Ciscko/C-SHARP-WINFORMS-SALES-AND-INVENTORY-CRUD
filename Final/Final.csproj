@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FDD71EB9-82E3-4CCB-A9E4-D65AF7F50F1C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Final</RootNamespace>
+    <AssemblyName>Final</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Dapper, Version=1.50.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.1.50.5\lib\net451\Dapper.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CONFIG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CONFIG.Designer.cs">
+      <DependentUpon>CONFIG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CUSTOMERS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CUSTOMERS.Designer.cs">
+      <DependentUpon>CUSTOMERS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EMPLOYEES.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EMPLOYEES.Designer.cs">
+      <DependentUpon>EMPLOYEES.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GIFTS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GIFTS.Designer.cs">
+      <DependentUpon>GIFTS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MODULES.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULES.Designer.cs">
+      <DependentUpon>MODULES.cs</DependentUpon>
+    </Compile>
+    <Compile Include="osposDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>osposDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PRODUCTS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRODUCTS.Designer.cs">
+      <DependentUpon>PRODUCTS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RECEIVINGS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RECEIVINGS.Designer.cs">
+      <DependentUpon>RECEIVINGS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REGISTER EMPLOYEE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REGISTER EMPLOYEE.Designer.cs">
+      <DependentUpon>REGISTER EMPLOYEE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SALES.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SALES.Designer.cs">
+      <DependentUpon>SALES.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SIGNIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SIGNIN.Designer.cs">
+      <DependentUpon>SIGNIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SUPPLIER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SUPPLIER.Designer.cs">
+      <DependentUpon>SUPPLIER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SUPPLIERS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SUPPLIERS.Designer.cs">
+      <DependentUpon>SUPPLIERS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="trialDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>trialDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl1.xaml.cs">
+      <DependentUpon>UserControl1.xaml</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CONFIG.resx">
+      <DependentUpon>CONFIG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CUSTOMERS.resx">
+      <DependentUpon>CUSTOMERS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EMPLOYEES.resx">
+      <DependentUpon>EMPLOYEES.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GIFTS.resx">
+      <DependentUpon>GIFTS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULES.resx">
+      <DependentUpon>MODULES.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRODUCTS.resx">
+      <DependentUpon>PRODUCTS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RECEIVINGS.resx">
+      <DependentUpon>RECEIVINGS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REGISTER EMPLOYEE.resx">
+      <DependentUpon>REGISTER EMPLOYEE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SALES.resx">
+      <DependentUpon>SALES.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SIGNIN.resx">
+      <DependentUpon>SIGNIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SUPPLIER.resx">
+      <DependentUpon>SUPPLIER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SUPPLIERS.resx">
+      <DependentUpon>SUPPLIERS.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="osposDataSet.xsc">
+      <DependentUpon>osposDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="osposDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>osposDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="osposDataSet.xss">
+      <DependentUpon>osposDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="trialDataSet.xsc">
+      <DependentUpon>trialDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="trialDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>trialDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="trialDataSet.xss">
+      <DependentUpon>trialDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="UserControl1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Desert.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="e5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pic8.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

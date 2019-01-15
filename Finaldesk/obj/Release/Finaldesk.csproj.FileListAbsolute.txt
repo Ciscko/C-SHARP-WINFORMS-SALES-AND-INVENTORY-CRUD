@@ -1,0 +1,10 @@
+C:\Users\HP\source\repos\Final\Finaldesk\bin\Release\Finaldesk.exe.config
+C:\Users\HP\source\repos\Final\Finaldesk\bin\Release\Finaldesk.exe
+C:\Users\HP\source\repos\Final\Finaldesk\bin\Release\Finaldesk.pdb
+C:\Users\HP\source\repos\Final\Finaldesk\obj\Release\Finaldesk.csprojAssemblyReference.cache
+C:\Users\HP\source\repos\Final\Finaldesk\obj\Release\Finaldesk.Form1.resources
+C:\Users\HP\source\repos\Final\Finaldesk\obj\Release\Finaldesk.Properties.Resources.resources
+C:\Users\HP\source\repos\Final\Finaldesk\obj\Release\Finaldesk.csproj.GenerateResource.cache
+C:\Users\HP\source\repos\Final\Finaldesk\obj\Release\Finaldesk.csproj.CoreCompileInputs.cache
+C:\Users\HP\source\repos\Final\Finaldesk\obj\Release\Finaldesk.exe
+C:\Users\HP\source\repos\Final\Finaldesk\obj\Release\Finaldesk.pdb
